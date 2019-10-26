@@ -1,0 +1,382 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-26T23:00:19.285Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7282895829,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RegisterNewUserSteps.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "new user registration with valid credentials",
+        "description": "",
+        "id": "register-for-ringgo-account;new-user-registration-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 71809099,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on RingGo Registration page",
+            "match": {
+              "location": "RegisterNewUserSteps.user_is_on_RingGo_Registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 327419454,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid \"0700990090\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0700990090\"",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterNewUserSteps.user_enters_valid(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 834094025,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid \"test@gmail.com\" and valid \"Automation01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Automation01\"",
+                  "offset": 45
+                }
+              ],
+              "location": "RegisterNewUserSteps.user_enters_valid_and_valid(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3108997490,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on recaptcha button",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_recaptcha_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#qf_e0f86b\"}\n  (Session info: chrome\u003d78.0.3904.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Jyothis-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1899:638a:944a:c06c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/n9/rk3t6p6j0fd...}, goog:chromeOptions: {debuggerAddress: localhost:59885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 2767a70dc540248a01e0024cc3b3823a\n*** Element info: {Using\u003did, value\u003dqf_e0f86b}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.qa.pages.RegisterNewUser.clickOnTermsAndConditions(RegisterNewUser.java:147)\n\tat com.qa.stepDefinition.RegisterNewUserSteps.user_clicks_on_T_C_Privacy_Policy(RegisterNewUserSteps.java:61)\n\tat ✽.user clicks on T\u0026C Privacy Policy(file:src/main/java/com/qa/features/registernewuser.feature:8)\n",
+              "duration": 52617533,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user clicks on T\u0026C Privacy Policy",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_T_C_Privacy_Policy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 367984,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on next button",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_next_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 303238,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should navigate to Registration success page",
+            "match": {
+              "location": "RegisterNewUserSteps.user_should_navigate_to_Registration_success_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-26T23:00:31.148Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5119125619,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RegisterNewUserSteps.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "new user registration with invalid credentials",
+        "description": "",
+        "id": "register-for-ringgo-account;new-user-registration-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15194831,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on RingGo Registration page",
+            "match": {
+              "location": "RegisterNewUserSteps.user_is_on_RingGo_Registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 304712135,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid \"0700\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0700\"",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterNewUserSteps.user_enters_invalid(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 628177005,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters invalid \"test.com\" and invalid \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"test\"",
+                  "offset": 43
+                }
+              ],
+              "location": "RegisterNewUserSteps.user_enters_invalid_and_invalid(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3090158648,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on recaptcha button",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_recaptcha_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#qf_e0f86b\"}\n  (Session info: chrome\u003d78.0.3904.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Jyothis-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1899:638a:944a:c06c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/n9/rk3t6p6j0fd...}, goog:chromeOptions: {debuggerAddress: localhost:59924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 3abae8f7c9c9e8f84218d445aa0ea587\n*** Element info: {Using\u003did, value\u003dqf_e0f86b}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.qa.pages.RegisterNewUser.clickOnTermsAndConditions(RegisterNewUser.java:147)\n\tat com.qa.stepDefinition.RegisterNewUserSteps.user_clicks_on_T_C_Privacy_Policy(RegisterNewUserSteps.java:61)\n\tat ✽.user clicks on T\u0026C Privacy Policy(file:src/main/java/com/qa/features/registernewuser.feature:21)\n",
+              "duration": 24016926,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "user clicks on T\u0026C Privacy Policy",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_T_C_Privacy_Policy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 325258,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user clicks on next button",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_next_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 281629,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User should be able to see error message in the form.",
+            "match": {
+              "location": "RegisterNewUserSteps.user_should_be_able_to_see_error_in_the_form_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-26T23:00:40.373Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5620818801,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RegisterNewUserSteps.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "leave user registration fileds empty",
+        "description": "",
+        "id": "register-for-ringgo-account;leave-user-registration-fileds-empty;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 54984900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user is on RingGo Registration page",
+            "match": {
+              "location": "RegisterNewUserSteps.user_is_on_RingGo_Registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 215977592,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user leaves \"\" fileld empty",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                }
+              ],
+              "location": "RegisterNewUserSteps.user_leaves_fileld_empty(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 380625107,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user leaves \"\" and \"\" field empty",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterNewUserSteps.user_leaves_and_field_empty(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3084266321,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user clicks on recaptcha button",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_recaptcha_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#qf_e0f86b\"}\n  (Session info: chrome\u003d78.0.3904.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Jyothis-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1899:638a:944a:c06c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/n9/rk3t6p6j0fd...}, goog:chromeOptions: {debuggerAddress: localhost:59965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 0a5fbed05bdc1dae4542da1b2468dd24\n*** Element info: {Using\u003did, value\u003dqf_e0f86b}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.qa.pages.RegisterNewUser.clickOnTermsAndConditions(RegisterNewUser.java:147)\n\tat com.qa.stepDefinition.RegisterNewUserSteps.user_clicks_on_T_C_Privacy_Policy(RegisterNewUserSteps.java:61)\n\tat ✽.user clicks on T\u0026C Privacy Policy(file:src/main/java/com/qa/features/registernewuser.feature:33)\n",
+              "duration": 29513382,
+              "status": "failed"
+            },
+            "line": 33,
+            "name": "user clicks on T\u0026C Privacy Policy",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_T_C_Privacy_Policy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 551767,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "user clicks on next button",
+            "match": {
+              "location": "RegisterNewUserSteps.user_clicks_on_next_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 410742,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "user should be able to see error message in the form.",
+            "match": {
+              "location": "RegisterNewUserSteps.user_should_be_able_to_see_error_in_form_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register for RingGo Account",
+    "description": "",
+    "id": "register-for-ringgo-account",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/com/qa/features/registernewuser.feature",
+    "tags": []
+  }
+]
